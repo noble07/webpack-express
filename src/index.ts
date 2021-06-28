@@ -2,7 +2,7 @@ import * as express from "express";
 import { Request, Response } from "express";
 
 const app = express();
-const port = 3002;
+const port = process.env.port || 3005;
 
 const initialState = {
   cart: [],
